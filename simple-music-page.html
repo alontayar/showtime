@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showtime - Alon Tayar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+            background: #000;
+            color: white;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px) brightness(0.3);
+            transform: scale(1.1);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cover-art {
+            width: 256px;
+            height: 256px;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .cover-art img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0 0 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0 0 40px;
+            color: #ccc;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .platform-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.2s;
+        }
+
+        .platform-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .platform-name {
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="cover-art">
+            <img src="/api/placeholder/256/256" alt="Showtime - Album Cover">
+        </div>
+        <h1>Showtime</h1>
+        <h2>Alon Tayar</h2>
+        <div class="links">
+            <a href="https://open.spotify.com/track/3nG4HXteMpeV5Zas3eNrh1" class="platform-link" target="_blank">
+                <span class="platform-name">Spotify</span>
+                →
+            </a>
+            <a href="https://music.apple.com/us/album/%D7%A9%D7%95%D7%90%D7%95%D7%98%D7%99%D7%99%D7%9D/1797212684?i=1797212685&app=itunes" class="platform-link" target="_blank">
+                <span class="platform-name">Apple Music</span>
+                →
+            </a>
+            <a href="https://www.youtube.com/watch?v=yNLbmfbIDYU" class="platform-link" target="_blank">
+                <span class="platform-name">YouTube</span>
+                →
+            </a>
+            <a href="https://listen.tidal.com/album/418193532/track/418193533" class="platform-link" target="_blank">
+                <span class="platform-name">Tidal</span>
+                →
+            </a>
+            <a href="https://www.deezer.com/en/track/3235629451" class="platform-link" target="_blank">
+                <span class="platform-name">Deezer</span>
+                →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
